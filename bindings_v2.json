@@ -1,0 +1,37 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "isExpression": false
+        },
+        "folderPath": {
+          "defaultValue": "/OT",
+          "isExpression": false
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "defaultValue": "/OT",
+          "isExpression": false
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}

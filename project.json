@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.2.0",
-  "projectVersion": "1.0.2",
+  "projectVersion": "1.0.4",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -44,6 +44,10 @@
     },
     "fileInfoCollection": [],
     "modernBehavior": false
+  },
+  "arguments": {
+    "input": [],
+    "output": []
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
