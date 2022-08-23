@@ -45,10 +45,6 @@
     "fileInfoCollection": [],
     "modernBehavior": false
   },
-  "arguments": {
-    "input": [],
-    "output": []
-  },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {

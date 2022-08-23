@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="748.666666666667,1044.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sg="clr-namespace:System.Globalization;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1434,1044.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sg="clr-namespace:System.Globalization;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="59">
       <x:String>System.Activities</x:String>
@@ -106,6 +106,7 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="758.666666666667,980" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -347,7 +348,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  start'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_36" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  start'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_36" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                                               <ui:Click.CursorPosition>
                                                 <ui:CursorPosition Position="Center">
                                                   <ui:CursorPosition.OffsetX>
@@ -431,15 +432,15 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <Transition.Condition>True</Transition.Condition>
                         <Transition.To>
-                          <State x:Name="__ReferenceID3" DisplayName="Upload cases" sap:VirtualizedContainerService.HintSize="648.666666666667,4328.66666666667" sap2010:WorkflowViewState.IdRef="State_2">
+                          <State x:Name="__ReferenceID3" DisplayName="Upload cases" sap:VirtualizedContainerService.HintSize="962.666666666667,6064.66666666667" sap2010:WorkflowViewState.IdRef="State_2">
                             <State.Entry>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="602,3959.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="916,5695.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:MultipleAssign DisplayName="Counters" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+                                <ui:MultipleAssign DisplayName="Counters" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
                                   <ui:MultipleAssign.AssignOperations>
                                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
@@ -467,7 +468,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:MultipleAssign>
-                                <ui:OutputDataTable DataTable="[dt_faktura]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="OutputDataTable_5" Text="[output_faktura]">
+                                <ui:OutputDataTable DataTable="[dt_faktura]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="OutputDataTable_5" Text="[output_faktura]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -475,13 +476,13 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:OutputDataTable>
-                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_faktura]" DisplayName="fetch data and insert into csv with For Each" sap:VirtualizedContainerService.HintSize="560,2114" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_faktura]" DisplayName="fetch data and insert into csv with For Each" sap:VirtualizedContainerService.HintSize="874,3850" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                                   <ui:ForEachRow.Body>
                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1995.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="840,3731.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_81">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:Object" Name="AllFaktura" />
                                           <Variable x:TypeArguments="x:String" Name="outputAlleFaktura" />
@@ -494,8 +495,8 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_58" Level="Info" Message="[CurrentRow(&quot;Due Date&quot;).ToString +&quot; &quot;+ DateTime.Now.ToString(&quot;dd-MM-yyyy&quot;)]" />
-                                        <ui:MultipleAssign DisplayName="Empty the variable value for each loop" sap:VirtualizedContainerService.HintSize="484,191.333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="798,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_22" Text="[&quot;Sjekker faktura: &quot; + CurrentRow(&quot;ID&quot;).ToString]" />
+                                        <ui:MultipleAssign DisplayName="Empty the variable value for each loop" sap:VirtualizedContainerService.HintSize="798,222" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                                           <ui:MultipleAssign.AssignOperations>
                                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
@@ -536,10 +537,20 @@
                                                   <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
+                                                <ui:AssignOperation.To>
+                                                  <OutArgument x:TypeArguments="x:String">[InvoiceDate]</OutArgument>
+                                                </ui:AssignOperation.To>
+                                                <ui:AssignOperation.Value>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <Literal x:TypeArguments="x:String" Value="" />
+                                                  </InArgument>
+                                                </ui:AssignOperation.Value>
+                                              </ui:AssignOperation>
                                             </scg:List>
                                           </ui:MultipleAssign.AssignOperations>
                                         </ui:MultipleAssign>
-                                        <Assign sap:VirtualizedContainerService.HintSize="484,62" sap2010:WorkflowViewState.IdRef="Assign_42">
+                                        <Assign sap:VirtualizedContainerService.HintSize="798,62" sap2010:WorkflowViewState.IdRef="Assign_42">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:Int32">[imageCounter]</OutArgument>
                                           </Assign.To>
@@ -547,7 +558,7 @@
                                             <InArgument x:TypeArguments="x:Int32">[imageCounter + 1]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Automation'" sap:VirtualizedContainerService.HintSize="484,358.666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="dcd3c98e5e1443f805fa7246207f69d4" Selector="&lt;html app='chrome.exe' /&gt;">
+                                        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Automation'" sap:VirtualizedContainerService.HintSize="798,358.666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="dcd3c98e5e1443f805fa7246207f69d4" Selector="&lt;html app='chrome.exe' /&gt;">
                                           <ui:BrowserScope.Body>
                                             <ActivityAction x:TypeArguments="x:Object">
                                               <ActivityAction.Argument>
@@ -572,7 +583,7 @@
                                             </ActivityAction>
                                           </ui:BrowserScope.Body>
                                         </ui:BrowserScope>
-                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="798,106" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -597,7 +608,7 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:OCRTextExists DisplayName="Check if company name exists " sap:VirtualizedContainerService.HintSize="484,222.666666666667" sap2010:WorkflowViewState.IdRef="OCRTextExists_3" Occurrence="1" Result="[bool_FakturaType]" Text="Aenean LLC">
+                                        <ui:OCRTextExists DisplayName="Check if company name exists " sap:VirtualizedContainerService.HintSize="798,222.666666666667" sap2010:WorkflowViewState.IdRef="OCRTextExists_3" Occurrence="1" Result="[bool_FakturaType]" Text="Aenean LLC">
                                           <ui:OCRTextExists.OCREngine>
                                             <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                                               <ActivityFunc.Argument>
@@ -607,9 +618,9 @@
                                             </ActivityFunc>
                                           </ui:OCRTextExists.OCREngine>
                                           <ui:OCRTextExists.Target>
-                                            <ui:Target Element="{x:Null}" Id="2682629b-60ff-4c62-84e4-3e6e0e9fbd74" InformativeScreenshot="2f26256ebde5e5e5e395e9c9e92e50bb" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                                            <ui:Target Element="{x:Null}" Id="2682629b-60ff-4c62-84e4-3e6e0e9fbd74" InformativeScreenshot="05f6dc06adfde042e8beb19ae9998eaa" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
                                               <ui:Target.ClippingRegion>
-                                                <ui:Region Rectangle="49, 53, 152, 45" />
+                                                <ui:Region Rectangle="42, 48, 168, 45" />
                                               </ui:Target.ClippingRegion>
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
@@ -620,12 +631,10 @@
                                             </ui:Target>
                                           </ui:OCRTextExists.Target>
                                         </ui:OCRTextExists>
-                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[bool_FakturaType.ToString]" />
-                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="[CurrentRow(&quot;ID&quot;).ToString + &quot; &quot; + CurrentRow(&quot;Due Date&quot;).ToString]" />
-                                        <If Condition="[bool_FakturaType]" DisplayName="Check faktura type" sap:VirtualizedContainerService.HintSize="484,52.6666666666667" sap2010:WorkflowViewState.IdRef="If_8">
+                                        <If Condition="[bool_FakturaType]" DisplayName="Check faktura type" sap:VirtualizedContainerService.HintSize="798,1995.33333333333" sap2010:WorkflowViewState.IdRef="If_8">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -647,9 +656,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="f3fd24260f8b79dd1bf9adbe12fe0d6d" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;" WaitForReady="COMPLETE">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="6b759e563b123b79cdc4a325d730c396" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;" WaitForReady="COMPLETE">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="676, 117, 65, 31" />
+                                                      <ui:Region Rectangle="676, 123, 66, 20" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -679,9 +688,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="808039c75105d4f624a18f253140cade" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="85ac3d32e125077575bfe928fc1524ec" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="647, 92, 103, 34" />
+                                                      <ui:Region Rectangle="656, 102, 85, 24" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -714,9 +723,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="8582f6e034fbe886bb605ff930feb0fc" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="dfbc3146c562ac5f80dd33d3dd65ed17" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="48, 40, 152, 58" />
+                                                      <ui:Region Rectangle="40, 51, 164, 47" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -741,9 +750,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="d1becff766354e326f0b0575d22d6323" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="48ebcffcbe66b70a187f8593797586dc" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="635, 667, 65, 22" />
+                                                      <ui:Region Rectangle="637, 666, 76, 23" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -762,20 +771,20 @@
                                                   <OutArgument x:TypeArguments="x:String">[InvoiceTotaldue]</OutArgument>
                                                 </Assign.To>
                                                 <Assign.Value>
-                                                  <InArgument x:TypeArguments="x:String">[InvoiceTotaldue.Replace("..",".").Replace("-","").Replace("|", "").Replace("~","")]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[InvoiceTotaldue.Replace("..",".").Replace("-","").Replace("|", "").Replace("~","").Replace(":","")]</InArgument>
                                                 </Assign.Value>
                                               </Assign>
                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_50" Level="Info" Message="[InvoiceTotaldue]" />
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="376,1966" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                            <Sequence sap:VirtualizedContainerService.HintSize="376,1831.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_80">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="Ikke Aenean Faktura" />
+                                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="Sit Amet Corp. Faktura" />
                                               <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'Invoice' " sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_37">
                                                 <ui:GetOCRText.OCREngine>
                                                   <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
@@ -786,9 +795,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="877e9a11b31fee599736aeb10e99d325" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;" WaitForReady="COMPLETE">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="c298dcaad34d6e762558058bb394d9be" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;" WaitForReady="COMPLETE">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="689, 77, 89, 28" />
+                                                      <ui:Region Rectangle="693, 77, 73, 31" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -818,9 +827,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="c8166e8b10d9eae478091d41af18316b" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="366fede3a28b8210d6bcc54b27198576" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="669, 142, 98, 33" />
+                                                      <ui:Region Rectangle="681, 143, 84, 34" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -834,7 +843,6 @@
                                                   <OutArgument x:TypeArguments="x:String">[InvoiceDate]</OutArgument>
                                                 </ui:GetOCRText.Text>
                                               </ui:GetOCRText>
-                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_59" Level="Info" Message="[InvoiceDate]" />
                                               <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_50">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[InvoiceDate]</OutArgument>
@@ -854,9 +862,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="675b0c3da57ac87ca0247803dfe7f526" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="3d9362b0d7797be9eda44700d8af508a" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="61, 174, 106, 29" />
+                                                      <ui:Region Rectangle="59, 169, 104, 33" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -881,9 +889,9 @@
                                                   </ActivityFunc>
                                                 </ui:GetOCRText.OCREngine>
                                                 <ui:GetOCRText.Target>
-                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="32900e1ded622ef12261519a17cbdfcb" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                                                  <ui:Target Element="{x:Null}" Id="37c01972-9142-4263-af18-10d7873a7fbe" InformativeScreenshot="fad4d3019db66cf0e0c97ba2d83e2fe6" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl tag='IMG' /&gt;">
                                                     <ui:Target.ClippingRegion>
-                                                      <ui:Region Rectangle="618, 180, 158, 30" />
+                                                      <ui:Region Rectangle="668, 175, 108, 37" />
                                                     </ui:Target.ClippingRegion>
                                                     <ui:Target.TimeoutMS>
                                                       <InArgument x:TypeArguments="x:Int32" />
@@ -909,7 +917,7 @@
                                             </Sequence>
                                           </If.Else>
                                         </If>
-                                        <If Condition="[DateTime.Now.ToString(&quot;dd-MM-yyyy&quot;).toString  &gt;= CurrentRow(&quot;Due Date&quot;).ToString]" DisplayName="Check if the date is today or in the past" sap:VirtualizedContainerService.HintSize="484,330" sap2010:WorkflowViewState.IdRef="If_9">
+                                        <If Condition="[DateTime.ParseExact(CurrentRow(&quot;Due Date&quot;).ToString,&quot;dd-MM-yyyy&quot;, system.globalization.cultureinfo.invariantculture) &gt;= DateTime.Today]" DisplayName="Check if the date is today or in the past" sap:VirtualizedContainerService.HintSize="798,330" sap2010:WorkflowViewState.IdRef="If_9">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -939,7 +947,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ForEachRow>
-                                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe 12.jpg'" sap:VirtualizedContainerService.HintSize="560,260" sap2010:WorkflowViewState.IdRef="BrowserScope_6" InformativeScreenshot="df42d9ab44e71327d7f77f445a9dd4d2" Selector="&lt;html app='chrome.exe' title='*' /&gt;">
+                                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe 12.jpg'" sap:VirtualizedContainerService.HintSize="874,260" sap2010:WorkflowViewState.IdRef="BrowserScope_6" InformativeScreenshot="df42d9ab44e71327d7f77f445a9dd4d2" Selector="&lt;html app='chrome.exe' title='*' /&gt;">
                                   <ui:BrowserScope.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
@@ -956,7 +964,7 @@
                                     </ActivityAction>
                                   </ui:BrowserScope.Body>
                                 </ui:BrowserScope>
-                                <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Clear the Excel sheet " sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="EndProduct\faktura.xlsx">
+                                <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Clear the Excel sheet " sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="EndProduct\faktura.xlsx">
                                   <ui:ExcelApplicationScope.Body>
                                     <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                                       <ActivityAction.Argument>
@@ -979,7 +987,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ExcelApplicationScope>
-                                <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\C166320\OneDrive - NAV\Dokumenter\GitHub\StateMachineTemplate\lagretFaktura" sap:VirtualizedContainerService.HintSize="560,82" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                                <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\C166320\OneDrive - NAV\Dokumenter\GitHub\StateMachineTemplate\lagretFaktura" sap:VirtualizedContainerService.HintSize="874,82" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                                   <ui:ForEachFileX.Body>
                                     <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                                       <ActivityAction.Argument1>
@@ -1024,7 +1032,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ForEachFileX>
-                                <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="C:\Users\C166320\OneDrive - NAV\Dokumenter\GitHub\StateMachineTemplate\EndProduct\faktura.xlsx" DisplayName="Open faktura Excel" FileName="explorer.exe" sap:VirtualizedContainerService.HintSize="560,86.6666666666667" sap2010:WorkflowViewState.IdRef="StartProcess_3">
+                                <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="C:\Users\C166320\OneDrive - NAV\Dokumenter\GitHub\StateMachineTemplate\EndProduct\faktura.xlsx" DisplayName="Open faktura Excel" FileName="explorer.exe" sap:VirtualizedContainerService.HintSize="874,86.6666666666667" sap2010:WorkflowViewState.IdRef="StartProcess_3">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1032,7 +1040,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:StartProcess>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Fil' in Excel" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_30" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DisplayName="Click 'Fil' in Excel" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_30" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -1060,7 +1068,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:Click>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Lagre en kopi' in Excel" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Lagre en kopi' in Excel" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -1088,7 +1096,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:Click>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'bla gjennom' in Excel" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'bla gjennom' in Excel" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -1116,7 +1124,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:Click>
-                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="2000" DelayMS="500" DisplayName="Find the CSV file folder" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="https://navno-my.sharepoint.com/personal/ahmed_chawshin_nav_no/Documents/Dokumenter/GitHub/StateMachineTemplate/EndProduct/faktura">
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBefore="2000" DelayMS="500" DisplayName="Find the CSV file folder" EmptyField="True" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="https://navno-my.sharepoint.com/personal/ahmed_chawshin_nav_no/Documents/Dokumenter/GitHub/StateMachineTemplate/EndProduct/faktura">
                                   <ui:TypeInto.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d09b3900-1609-451c-ad76-2bfe1a45fa4c" InformativeScreenshot="b9950cf2502fbaf2b848c1e7ce1ac0ea" Selector="&lt;wnd app='excel.exe' cls='#32770' title='Lagre som' /&gt;&lt;wnd aaname='Utforsker-rute' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Filnavn:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -1134,7 +1142,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:TypeInto>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="500" DisplayName="Pick CSV file" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_33" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="500" DisplayName="Pick CSV file" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_33" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -1162,7 +1170,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:Click>
-                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'c' to jump down to csv " sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="c" KeyModifiers="None">
+                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'c' to jump down to csv " sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="c" KeyModifiers="None">
                                   <ui:SendHotkey.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a3270aad-b8ef-4501-a3a4-f3a9508e068b" InformativeScreenshot="cd6087c3eaff190ab6eb43902cc77e7c" Selector="&lt;wnd app='excel.exe' cls='#32770' title='Lagre som' /&gt;&lt;ctrl name='Lagre som' role='dialog' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -1180,7 +1188,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:SendHotkey>
-                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'c' to jump down to csv " sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="c" KeyModifiers="None">
+                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'c' to jump down to csv " sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="c" KeyModifiers="None">
                                   <ui:SendHotkey.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a3270aad-b8ef-4501-a3a4-f3a9508e068b" InformativeScreenshot="cd6087c3eaff190ab6eb43902cc77e7c" Selector="&lt;wnd app='excel.exe' cls='#32770' title='Lagre som' /&gt;&lt;ctrl name='Lagre som' role='dialog' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -1198,7 +1206,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:SendHotkey>
-                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Click enter to pick the right file format" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Click enter to pick the right file format" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="enter" KeyModifiers="None" SpecialKey="True">
                                   <ui:SendHotkey.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a3270aad-b8ef-4501-a3a4-f3a9508e068b" InformativeScreenshot="cd6087c3eaff190ab6eb43902cc77e7c" Selector="&lt;wnd app='excel.exe' cls='#32770' title='Lagre som' /&gt;&lt;ctrl name='Lagre som' role='dialog' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -1216,7 +1224,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:SendHotkey>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Save as csv file" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_34" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Save as csv file" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_34" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -1244,7 +1252,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:Click>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Continue to save as CSV (duplicate file)" sap:VirtualizedContainerService.HintSize="560,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_35" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Continue to save as CSV (duplicate file)" sap:VirtualizedContainerService.HintSize="874,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_35" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
